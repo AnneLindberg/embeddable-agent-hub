@@ -6,17 +6,17 @@
 
 @layer base {
   :root {
-    --background: 248 250 252;
+    --background: 248 50% 98%;
     --foreground: 212 27% 14%;
 
-    --card: 255 255 255;
+    --card: 0 0% 100%;
     --card-foreground: 212 27% 14%;
 
-    --popover: 255 255 255;
+    --popover: 0 0% 100%;
     --popover-foreground: 212 27% 14%;
 
     --primary: 217 91% 60%;
-    --primary-foreground: 255 255 255;
+    --primary-foreground: 0 0% 100%;
     --primary-hover: 217 91% 55%;
 
     --secondary: 226 100% 97%;
@@ -29,7 +29,7 @@
     --accent-foreground: 217 91% 30%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 255 255 255;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 226 60% 93%;
     --input: 226 60% 96%;
@@ -38,10 +38,10 @@
     --radius: 0.75rem;
 
     /* Custom AI Builder Colors */
-    --agent-card: 255 255 255;
+    --agent-card: 0 0% 100%;
     --agent-border: 226 60% 93%;
     --chat-user: 217 91% 60%;
-    --chat-user-foreground: 255 255 255;
+    --chat-user-foreground: 0 0% 100%;
     --chat-assistant: 226 100% 97%;
     --chat-assistant-foreground: 212 27% 14%;
     --code-bg: 222 84% 5%;
@@ -49,7 +49,7 @@
 
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(220 100% 70%));
-    --gradient-card: linear-gradient(145deg, hsl(255 255 255), hsl(226 100% 99%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(226 100% 99%));
     --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(220 100% 70%) 50%, hsl(225 100% 75%) 100%);
 
     /* Shadows */
@@ -156,9 +156,9 @@
   }
 
   .code-block {
-    @apply bg-slate-900 text-slate-100 rounded-md p-3 text-sm font-mono;
-    background: var(--code-bg);
-    color: var(--code-foreground);
+    @apply rounded-md p-3 text-sm font-mono;
+    background: hsl(var(--code-bg));
+    color: hsl(var(--code-foreground));
   }
 
   .form-section {
